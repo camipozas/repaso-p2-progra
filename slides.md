@@ -46,13 +46,16 @@ layout: image-right
 image: https://images.unsplash.com/photo-1541336032412-2048a678540d
 ---
 
-# What is Docker?
-It is a software platform that allows you to quickly build, test, and deploy applications.
+# Ciclo While
+El bucle `while` evalúa una condición y luego ejecuta un bloque de código si la condición es verdadera. El bloque de código se ejecuta repetidamente hasta que la condición llega ser o es falsa.
 
-- 📦 **Packages** Docker packages software into standardized units called containers that include everything needed for the software to run, including libraries, system tools, code, and runtime.
-- 🐳 **Container** Really allows us to encapsulate, that is, pack software inside said container using the microservices architecture.
-
-Read more about [Docker.](https://profile.es/blog/que_es_docker/)
+La sintaxis básica es:
+```python
+contador = 0
+while contador < 10:
+   # Ejecuta el bloque de código aquí
+   # Siempre que el contador sea inferior a 10
+```
 
 <style>
 h1 {
@@ -68,79 +71,33 @@ h1 {
 
 ---
 
-# Process of creating a container in Docker
+# Ejemplo 1
 
-In addition, it is necessary to clarify that within the container a series of instructions **(dockerfile)** are defined that allow creating an image **(docker image)** with which to start said container **(docker container)**.[^1]
-
-1. 🐳 **Dockerfile:** it is the text document on which we can group a series of commands so that they are all executed at the same time, thus avoiding having to execute them one by one manually so that the process of creating a Docker image is much easier. faster and more efficient.
-2. 🖼️ **Docker image:** a Docker image, contains the libraries, along with the application code that contains everything necessary to run our application.
-3. 📦 **Container:** It is a Docker image when it starts working, that is, when it comes to life.
-
-
-<div id="centrado">
-  <img src="https://profile.es/wp-content/media/image-1.png" align="right" width="600" height="600"/>
-</div>
-
-<style>
-centrado {
-  position: relative;
-  margin: 0 auto;
-  height: 100px;
-  width: 100px;
-}
-</style>
-
-[^1]: [Learn More](https://profile.es/blog/que_es_docker/)
-
----
-
-# How to make a Dockerfile?
-This file is made up of a series of commands that I will indicate below, and that are responsible for [building the image.](https://atareao.es/tutorial/docker/crear-tus-propias-imagenes-docker/)
-
-### Docker Commands
-|     |     |
-| --- | --- |
-<kbd>ADD</kbd> | copies a file from the host to the container.
-<kbd>CMD</kbd> | the argument you pass by default.
-<kbd>ENTRYPOINT</kbd> | the command that is executed by default when starting the container.
-<kbd>ENV</kbd> | allows you to declare an environment variable in the container.
-<kbd>EXPOSE</kbd> | open a container port.
-<kbd>FROM</kbd> | indicates the base image that you will use to build your custom image. This option is required, and must also be the first instruction in the Dockerfile.
-
----
-
-# Docker Commands
-|     |     |
-| --- | --- |
-<kbd>ONBUILD</kbd> | allows you to indicate a command that is executed when your image is used to create another image.
-<kbd>RUN</kbd> | run a command and save the result as a new layer.
-<kbd>USER</kbd> | defines the default user of the container.
-<kbd>VOLUME</kbd> | creates a volume that is shared by the different containers or with the host.
-<kbd>WORKDIR</kbd> | defines the working directory for the container.
-<kbd>LABEL</kbd> | instruction adds metadata to an image. A <kbd>LABEL</kbd> is a key-value pair.
-<kbd>VOLUME</kbd> | instruction creates a mount point with the specified name and marks it as holding externally mounted volumes from native host or other containers.
-
-[Learn more](https://docs.docker.com/engine/reference/builder/)
-
----
-
-# Basic Example
-
-```docker {all|1-4|6-9|10-11|13|15-16|all}
-FROM python:3.9
-
-ENV APP_HOME /usr/src/app
-WORKDIR /$APP_HOME
-
-# Install python dependencies
-COPY requirements.txt /tmp/
-RUN pip install --requirement /tmp/requirements.txt
-RUN pip freeze
-# Copy env variables
-ADD .env .env
-
-COPY . $APP_HOME/
-
-# Run
-CMD python main.py
+```python
+dia = 0    
+semana = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo']
+while dia < 7:
+   print("Hoy es " + semana[dia])
+   dia += 1
 ```
+Resultado:
+```bash{1|2|3|4|5|6|7}
+Hoy es Lunes
+Hoy es Martes
+Hoy es Miércoles
+Hoy es Jueves
+Hoy es Viernes
+Hoy es Sabado
+Hoy es Domingo
+```
+<!-- 
+1. La variable "dia" tiene el valor 0.
+2. La variable semana es asignada a una lista que contiene todos los días de la semana.
+3. El bucle while comienza
+4. El bloque de código se ejecutará hasta que la condición devuelva "true".
+5. La condición es 'dia < 7' que aproximadamente dice que se ejecute el bucle while hasta que la variable dia sea menor que 7.
+6. Así que cuando el dia=7 el bucle while deja de ejecutarse.
+7. La variable dia se actualiza en cada iteración.
+8. Cuando el bucle while se ejecuta por primera vez, la línea "Hoy es lunes" se imprime en la consola y la variable dia se hace igual a 1.
+9. Como la variable dia es igual a 1 y es menor que 7, se ejecuta de nuevo el bucle while.
+10. Continúa una y otra vez y cuando la consola imprime 'Hoy es domingo' la variable dia es ahora igual a 7 y el bucle while deja de ejecutarse.-->
