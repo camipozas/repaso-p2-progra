@@ -22,7 +22,9 @@ drawings:
 
 # Repaso P2
 
-Camila Pozas
+Camila Pozas García
+
+Programación
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -31,9 +33,6 @@ Camila Pozas
 </div>
 
 <div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
   <a href="https://github.com/camipozas" target="_blank" alt="GitHub"
     class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
@@ -592,7 +591,7 @@ h1 {
 ## Remodelación de matrices
 Usando NumPy puedes convertir una matriz unidimensional en una matriz bidimensional usando el <kbd>reshape</kbd> método.
 
-```python {1|2|3}
+```python {1-2|3-6}
 nums = np.arange(1, 17) # Creamos una matriz de 16 elementos - unidimensional
 nums2 = nums.reshape(4, 4) # Vamos a convertirlo en una matriz bidimensional de 4 filas y 4 columnas
 # array([[ 1,  2,  3,  4],
