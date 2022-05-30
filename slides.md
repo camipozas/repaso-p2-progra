@@ -103,7 +103,8 @@ Aquí más ejercicios: [Ejercicios while 1](http://patriciaemiguel.com/ejercicio
 7. La variable dia se actualiza en cada iteración.
 8. Cuando el bucle while se ejecuta por primera vez, la línea "Hoy es lunes" se imprime en la consola y la variable dia se hace igual a 1.
 9. Como la variable dia es igual a 1 y es menor que 7, se ejecuta de nuevo el bucle while.
-10. Continúa una y otra vez y cuando la consola imprime 'Hoy es domingo' la variable dia es ahora igual a 7 y el bucle while deja de ejecutarse.-->
+10. Continúa una y otra vez y cuando la consola imprime 'Hoy es domingo' la variable dia es ahora igual a 7 y el bucle while deja de ejecutarse.
+-->
 
 ---
 
