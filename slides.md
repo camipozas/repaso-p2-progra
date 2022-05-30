@@ -150,7 +150,9 @@ h1 {
 }
 </style>
 
-<!-- Si iteramos usando sólo un <kbd>for</kbd>, estaremos realmente accediendo a la segunda lista, pero no a los elementos individuales. -->
+<!-- 
+Si iteramos usando sólo un <kbd>for</kbd>, estaremos realmente accediendo a la segunda lista, pero no a los elementos individuales. 
+-->
 
 ---
 
