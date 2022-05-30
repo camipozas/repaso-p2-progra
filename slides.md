@@ -92,6 +92,7 @@ Hoy es Domingo
 ```
 
 Aquí más ejercicios: [Ejercicios while 1](http://patriciaemiguel.com/ejercicios/python/2019/03/10/ejercicios-buclewhile-python.html), [Ejercicios while 2](https://www.mclibre.org/consultar/python/ejercicios/ej-while-1.html)
+
 <!-- 
 1. La variable "dia" tiene el valor 0.
 2. La variable semana es asignada a una lista que contiene todos los días de la semana.
@@ -136,8 +137,6 @@ for i in lista:
 # Salida: 56,34,1,12,4,5,9,4,3
 ```
 
-<!-- Si iteramos usando sólo un <kbd>for</kbd>, estaremos realmente accediendo a la segunda lista, pero no a los elementos individuales. -->
-
 <style>
 h1 {
   background-color: #2B90B6;
@@ -149,6 +148,8 @@ h1 {
   -moz-text-fill-color: transparent;
 }
 </style>
+
+<!-- Si iteramos usando sólo un <kbd>for</kbd>, estaremos realmente accediendo a la segunda lista, pero no a los elementos individuales. -->
 
 ---
 
@@ -300,6 +301,18 @@ print(l)
 ```
 </div>
 
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+</style>
+
 <!-- Podemos indicarle un índice con el elemento a sacar (0 es el primer ítem)
 ```python
 print(l.pop(0))
@@ -316,18 +329,6 @@ cadena = "".join(lista)
 cadena
 # 'odnum aloH'    
 ``` -->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-</style>
 
 ---
 
@@ -368,13 +369,6 @@ print(",".join(so))
 ```
 </div>
 
-<!--
-Podemos utilizar el argumento reverse=True para indicar que la ordene del revés.
-```python
-lista.sort(reverse=True)
-lista
-```
--->
 <style>
 h1 {
   background-color: #2B90B6;
@@ -386,6 +380,14 @@ h1 {
   -moz-text-fill-color: transparent;
 }
 </style>
+
+<!--
+Podemos utilizar el argumento reverse=True para indicar que la ordene del revés.
+```python
+lista.sort(reverse=True)
+lista
+```
+-->
 
 ---
 
@@ -522,6 +524,18 @@ h1 {
 - <kbd>np.linspace(inicio, fin, n)</kbd>: Crea y devuelve una referencia a un array de una dimensión cuyos elementos son la secuencia de **n valores equidistantes** desde inicio hasta fin.
 - <kbd>np.random.random(dimensiones)</kbd>: Crea y devuelve una referencia a un array con las dimensiones especificadas en la tupla dimensiones cuyos elementos son **aleatorios**.
 
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+</style>
+
 <!--Una tupla es una colección de datos cuyo orden es inalterable, o sea, son elementos ordenados en una secuencia específica y que posee importancia. En Python, los tuples se escriben entre paréntesis.
 
 ```python
@@ -534,17 +548,6 @@ print(np.linspace(0, 10, 5))
 # [ 0.   2.5  5.   7.5 10. ]
 ``` -->
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-</style>
 ---
 
 # Acceder a los elementos de un array
@@ -578,6 +581,7 @@ h1 {
   -moz-text-fill-color: transparent;
 }
 </style>
+
 ---
 
 # Otros métodos Numpy
