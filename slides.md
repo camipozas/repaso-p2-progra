@@ -72,7 +72,7 @@ h1 {
 
 # Ejemplo 1
 
-```python
+```python{1|2|3|4-5|all}
 dia = 0    
 semana = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo']
 while dia < 7:
